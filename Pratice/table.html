@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+<body>
+    <hr>
+    <br>
+    <!-- Tablo için table yazıp kenarlıklar için border kullanıyoruz -->
+    <table border="1">
+        <tr>
+            <!-- her bir satır için tr kullanıyoruz -->
+            <!-- Kolonları birleştirmek için colspan -->
+            <!-- Başlıklar için "th" normal satırlar için "td" kullanıyoruz -->
+            <th colspan="2"> 
+                Kişisel Bilgiler
+            </th>
+        </tr>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Pehlivan</td>
+        </tr>
+        <!-- Satırları birleştirmek için rowspan kullanıyoruz -->
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="3">Hayvanlar Alemi</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Türler</td>
+        </tr>
+        <tr>
+            <td>Kuş</td>
+            <td>Karga</td>
+        </tr>
+        <tr>
+            <td>Balık</td>
+            <td>Hamsi</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    
+    <!-- Yani colspan sütündan gelen dik çizgeleri siler ---- rowspan ise satır arasındaki çizgileri siler -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Ürün</th>
+        </tr>
+        <tr>
+            <td>No</td>
+            <td>Ürün Adı</td>
+            <td>Ürün Adedi</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Kalem</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Defter</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Silgi</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Ana Sayfa</a>
+            </li>
+            <li>
+                <a href="about-us.html">Hakkımızda</a>
+            </li>
+            <li>
+                <a href="contact.html">İletişim</a>
+            </li>
+            <li>
+                <a href="formverileri.html">Form Verileri</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <hr>
+</body>
+</html>

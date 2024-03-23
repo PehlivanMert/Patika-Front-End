@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Verileri - Üye Olma</title>
+</head>
+<body>
+    <form>
+        <table border="1">
+        <tr>
+            <th>Kullanıcı Bilgileri</th>
+        </tr>
+        <!-- Verileri inputla alıyoruz type ile türünü belirtip zorunlu ise required yazıyoruz.
+        Placeholder ile de input kutularının içine ne girilmesi gerektiğini yazıyoruz istersek kutuların dışına yazmayız-->
+        <tr>
+            <th>İsim : <input type="text" required placeholder="İsim"></th>
+        </tr>
+        <tr>
+            <th>Soyisim:<input type="text" required placeholder="Soyisim"></th>
+        </tr>
+        <tr>
+            <th>Şifre:<input type="password" placeholder="Şifreniz" required></th>
+        </tr> 
+        <tr>
+            <th>E-Posta:<input type="email" required placeholder="Mail Adresi"></th>
+        </tr>
+        <tr>
+            <th>Cinsiyet:</th>
+        </tr>
+        <!-- Seçeneklere tıklanarak girdi almak radio button kullanıyoruz tek bir giriş almak için
+        name bölümüne ne için giriş alıyorsak onu belirtiyoruz Butonun seçili gelmesini istiyorsak checked true yapacağız-->
+        <tr>
+            <td>
+                <input type="radio" name="Cinsiyet">Erkek <br>
+                <input type="radio" name="Cinsiyet">Kadın <br>
+                <input type="radio" name="Cinsiyet" checked="true">Belirtmek İstemiyorum
+            </td>
+        </tr>
+        <!-- Yine tıklanarak giriş almak için checkbox kullanıyoruz -->
+        <tr>
+            <th>Favori Şehriniz ?</th>
+        </tr>
+        <tr>
+            <!-- Check boxları ayırmak için checkboxlara id verilebilir -->
+           <td> 
+            <input type="checkbox">Merzifon <br>
+            <input type="checkbox">Çorum <br>
+            <input type="checkbox">Çemişgezek <br>
+            </td>
+        </tr>
+        <!-- Dosya Seçme -->
+        <tr>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <th>Doğum Tarihi:<input type="date"> </th>
+        </tr>
+        <tr>
+            <th><input type="submit" value="Üye Ol!">
+            <input type="reset" value="Temizle"></th>
+        </tr>
+        </table>
+    </form>
+    <!-- Mesaj Alanı  -->
+    <nav>
+        <textarea name="Mesaj" id="MesajAlani" cols="33" rows="10"></textarea> 
+        <br>
+        <!-- Açılır seçenekler -->
+        En sevdiğin içecek ? :
+        <select>
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select>
+    </nav>
+    <br>
+    <hr>
+    <br>
+    <!-- <label> etiketi, form elemanları için anlamlı ve erişilebilir bir etiket oluşturur. 
+            for özelliği, etiketin hangi form elemanına ait olduğunu belirler. -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Ana Sayfa</a>
+            </li>
+            <li>
+                <a href="about-us.html">Hakkımızda</a>
+            </li>
+            <li>
+                <a href="contact.html">İletişim</a>
+            </li>
+            <li>
+                <a href="table.html">Tablolarla Çalışmak Örnekler</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
