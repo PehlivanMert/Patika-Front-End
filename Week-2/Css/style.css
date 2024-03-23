@@ -1,11 +1,22 @@
 /* 
 Açıklama Satırı
+
+Google fonts dan fontların linkini al html de style ın üstüne yapıştır sonra da burada font-family düzenle
  */
 h2 {
     color: goldenrod;
-    background-color: rgb(212, 35, 41);
+    /* background-color: rgb(212, 35, 41); */
     font-size: 45px;
 }
 p {
     font-size: 36px;
+    text-transform: lowercase;
+}
+body {
+    background-color: yellowgreen;
+}
+ol {
+    list-style-position: inside;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
