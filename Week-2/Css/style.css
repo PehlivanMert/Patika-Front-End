@@ -1,0 +1,11 @@
+/* 
+Açıklama Satırı
+ */
+h2 {
+    color: goldenrod;
+    background-color: rgb(212, 35, 41);
+    font-size: 45px;
+}
+p {
+    font-size: 36px;
+}
