@@ -1,0 +1,106 @@
+/* Html de oluşturduğumuz her bir etiket için "*" kullanıp seçiyoruz ve istediğimiz şeyleri sıfırlıyoruz */
+* {
+  /* Margin: Bir elemanın dış kenarlarının, komşu elemanlardan olan uzaklığını belirtir. 
+    Margin, bir elemanın dışında boşluk bırakmak için kullanılır ve elemanın dış etkileşimini diğer elemanlardan ayırır. */
+  margin: 0;
+
+  /* Padding: Bir elemanın içeriğinin, iç kenarları ile dış kenarları arasındaki boşluğu belirtir. 
+    Padding, içeriği ve elemanın kenarları arasındaki boşluğu kontrol etmek için kullanılır.*/
+  padding: 0;
+
+  /* Box-sizing: Bir elemanın genişliği ve yüksekliği hesaplanırken padding ve border'ın dahil edilip edilmeyeceğini belirler. 
+    Varsayılan değer content-box'tır, bu durumda padding ve border, elemanın genişliği ve yüksekliği hesaplanırken dışarıda tutulur.
+    border-box kullanıldığında, padding ve border içeriğin genişliği ve yüksekliği içine dahil edilir. */
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #e3651d;
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+  /* Arka Plan rengi font rengi padding ve yazının yatay konumunu ayarladım */
+}
+header h1 {
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  /* text-decoration: none;: Bu özellik, bağlantıların alt çizgisini kaldırır. 
+    Yani, bağlantılar altı çizili olmayacak ve metin görünümü düzgün bir şekilde sağlanacaktır. */
+}
+/* Hover olduğunda yani üzerine geldiğimizde altı çizili olacak. */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+    text-align: center; /* İçeriği yatay olarak ortala */
+    border: 20px solid #e3651d; /* Turuncu çerçeve ekle */
+    padding: 20px; /* İçerik ile çerçeve arasında boşluk bırak */
+  }
+
+  .contact h2 {
+    padding-bottom: 5px;
+    font-size: 30px;
+  }
+.contact ul {
+    text-decoration: none;
+    text-shadow: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+}
+
+.contact ul li {
+    padding-bottom: 5px;
+
+}
+  
+.contact iframe {
+    margin-top: 20px; /* Harita ile diğer içerik arasında boşluk bırak */
+}
+  
+
+/*************************************************************/
+
+/********************************************************* */
+
+.footer {
+  background-color: #e3651d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+}
+/* Telefonlarda bozulmayı engellemek için */
+@media only screen and (max-width: 480px) {
+  .menu {
+    text-align: center;
+  }
+
+  .promotion,
+  .popular {
+    text-align: center;
+  }
+
+  .menu-item {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
