@@ -47,8 +47,12 @@ nav ul li a:hover {
 }
 
 .about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center; /* İçeriği yatay olarak ortala */
-  border: 20px solid #e3651d; /* Turuncu çerçeve ekle */
+  border: 0px;
   padding: 100px;
 }
 
@@ -58,8 +62,8 @@ nav ul li a:hover {
 }
 
 .about p {
-    padding-bottom: 2px;
-    font-size: 20px;
+  padding-bottom: 2px;
+  font-size: 20px;
 }
 
 /*************************************************************/
@@ -70,6 +74,8 @@ nav ul li a:hover {
   text-align: center;
   padding: 20px 0px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer a {

@@ -47,31 +47,34 @@ nav ul li a:hover {
 }
 
 .contact {
-    text-align: center; /* İçeriği yatay olarak ortala */
-    border: 20px solid #e3651d; /* Turuncu çerçeve ekle */
-    padding: 20px; /* İçerik ile çerçeve arasında boşluk bırak */
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* İçeriği yatay olarak ortala */
+  border: 0;
+  padding: 20px; /* İçerik ile çerçeve arasında boşluk bırak */
+}
 
-  .contact h2 {
-    padding-bottom: 5px;
-    font-size: 30px;
-  }
+.contact h2 {
+  padding-top:15px;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
 .contact ul {
-    text-decoration: none;
-    text-shadow: #333;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    list-style: none;
+  text-decoration: none;
+  text-shadow: #333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style: none;
 }
 
 .contact ul li {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
+}
 
-}
-  
 .contact iframe {
-    margin-top: 20px; /* Harita ile diğer içerik arasında boşluk bırak */
+  margin-top: 20px; /* Harita ile diğer içerik arasında boşluk bırak */
 }
-  
 
 /*************************************************************/
 
@@ -83,6 +86,8 @@ nav ul li a:hover {
   text-align: center;
   padding: 20px 0px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer a {
