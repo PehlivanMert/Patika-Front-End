@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/dinner-icon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h1>Lezzetli Yemekler</h1>
+
+        <nav>
+            <ul>
+                <li> <a href="index.html">Anasayfa</a></li>
+                <li><a href="">Menüler</a></li>
+                <li> <a href="">Hakkımızda</a></li>
+                <li> <a href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" placeholder="Yemek Ara..."/>
+        <button type="submit">Ara</button>
+    </div>
+    <!-- Tanıtım amaclı yapılar Herolar oluşturuyoruz -->
+    <div class="hero">
+        <h1>Lezzetli Yemeklerin Tek Adresi</h1>
+        <p>Lezzetli yemekler size bir tık kadar yakın...</p>
+        <a href="#" class="button">Yemekleri Keşfet</a>
+    </div>
+
+    <!-- Daha anlamlı olması için div değil section etiketi kullanıyorum. Burada Yemek görseli,fiyat,açıklama vs. olacağı için çok
+    fazla div olacak bu divleri tek bir divde birleştireceğim-->
+    <section class="promotion">
+        <h2>İndirimli Yemekler</h2>
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="img/iskender.JPG" alt="Yemek 1">
+                <h3>İskender</h3>
+                <p>Etin, yoğurt ve tereyağı ile buluşmasıyla ortaya çıkan lezzet şöleni.</p>   
+                    <!-- Eski fiyatın üstünün çizilmesi için span içine aldım del etiketi kullanıyorum
+                    boşluk içinde &nbsp kullanıyorum -->
+                    <span><del>300TL</del>&nbsp; 200TL</span>
+                    <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/adana-kebap.jpg" alt="Yemek 2">
+                <h3>Adana Kebap</h3>
+                <p>Adana kebap, Türk mutfağının coşkulu bir başyapıtıdır! Nar gibi kızarmış etler, 
+                    özenle seçilmiş baharatlarla buluşur, köz ateşinde dans eder. Her lokmada bir lezzet şöleni yaşarsınız!</p>   
+                    <span><del>325TL</del>&nbsp; 225TL</span>
+                    <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/lahmacun.jpg" alt="Yemek 3">
+                <h3>Lahmacun</h3>
+                <p>Lahmacun, Türk mutfağının gurur kaynağıdır! İncecik hamurun üzerine sürülen nefis harç, her lokmada bir lezzet patlaması yaşatır. 
+                    Her ısırık, doğunun egzotik lezzetlerini hissettirir, damaklarda unutulmaz bir iz bırakır.</p>   
+                    <span><del>200TL</del>&nbsp; 120TL</span>
+                    <button class="order-button">Sipariş Ver</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <h2>Popüler Yemekler</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="img/icli-kofte.jpg" alt="Yemek 4">
+                <h3>İçli Köfte</h3>
+                <p>Bulgurun içine kıyma konularak hazırlanan,kızartılarak servis edilen bir lezzet</p>
+                <span>75TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+
+            
+            <div class="menu-item">
+                <img src="img/imam-bayildi.jpg" alt="Yemek 5">
+                <h3>İmam Bayıldı</h3>
+                <p>Biber ve domatesle doldurmuş,zeytinyağı ile pişirilen bir sebze yemeği</p>
+                <span>100TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+
+                
+            <div class="menu-item">
+                <img src="img/karniyarik.jpg" alt="Yemek 6">
+                <h3>Karnıyarık</h3>
+                <p>Patlıcanın ortadan ayrılıp içerisine kıyma konulan bir lezzet</p>
+                <span>120TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/beyran-corbasi.jpg" alt="Yemek 7">
+                <h3>Beyran Çorbası</h3>
+                <p>Beyran çorbası, geleneksel Türk mutfağının mücevherlerinden biridir! 
+                    Tadıyla sizi doğrudan Anadolu'nun sokak lezzetlerine götürür. 
+                    Kokusu bile iştahınızı kabartırken, içine katılan yoğurt ve sarımsakla birleşen pirinç ve et, damaklarınıza muhteşem bir dans sunar. Her çorba kaşığında sıcaklığı ve lezzetiyle sizi kucaklar.</p>
+                <span>180TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/firinda-patates.jpg" alt="Yemek 8">
+                <h3>Fırında Patates</h3>
+                <p>Fırında patates, basit ama lezzetli bir tarif. Dilimlenmiş patatesler, zeytinyağı, tuz ve baharatlarla harmanlanarak 
+                    fırında kızartılır. Pişerken yayılan mis gibi kokusu evi sarmalar. 
+                    Dışı çıtır çıtır, içi yumuşacık olan bu atıştırmalık, her lokmada lezzet patlaması yaşatır.
+                </p>
+                <span>90TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/mevsim-salata.jpg" alt="Yemek 9">
+                <h3>Mevsim Salata</h3>
+                <p>Mevsim salata, doğanın tazeliğini sofralara taşır! Renkli sebzeler, meyveler ve yeşillikler özenle harmanlanır. 
+                    Ferahlatıcı limon veya zeytinyağı sosuyla buluşur, her ısırıkta sağlık ve lezzet sunar.
+                </p>
+                <span>50TL</span>
+                <button class="order-button">Sipariş Ver</button>
+                <span class="tag">Popüler</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="menu">
+        <h2>Tüm Yemekler</h2>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="img/kuru-fasulye.jpg" alt="Yemek 10">
+                <h3>Kuru Fasülye</h3>
+                <p>Kuru Fasulyenin salça ve baharatlarla pişirilmesi ile yapılan bir lezzet</p>
+                <span>120TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/bulgur-pilavi.jpg" alt="Yemek 11">
+                <h3>Bulgur Pilavı</h3>
+                <p>Bulgurun hafif ve doyurucu dokusu, her lokmada keyif verir. 
+                    İnce doğranmış sebzeler ve baharatlarla zenginleştirilmiş bu lezzetli pilav, sofraların vazgeçilmezlerindendir.
+                     Her ısırıkta, Anadolu'nun sıcaklığı ve lezzeti hissedilir.</p>
+                <span>100TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/etli-karnabahar.jpg" alt="Yemek 12">
+                <h3>Etli Karnabahar</h3>
+                <p>Etli karnabahar, sağlıklı ve doyurucu bir lezzet şölenidir. 
+                    Kıyma ile harmanlanmış karnabahar, zengin ve doyurucu bir ana yemek olarak sofraları süsler. Baharatlarla tatlandırılmış etin yumuşak dokusu, karnabaharın hafif ve gevrek tadıyla mükemmel bir uyum sağlar. 
+                    Her lokmada besleyici ve lezzetli bir deneyim sunar.</p>
+                <span>120TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/etli-nohut.jpg" alt="Yemek 13">
+                <h3>Etli Nohut</h3>
+                <p>Nohutun kıvamıyla etin lezzeti bir araya gelerek muhteşem bir uyum oluşturur. 
+                    Baharatlarla zenginleştirilmiş etli nohut, sıcak bir tabak dolusu memnuniyet ve lezzet sunar. 
+                    Her lokmada Anadolu'nun mis gibi kokuları ve tadlarıyla sizi kucaklar.
+                </p>
+                <span>110TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/etli-yaprak-sarma.jpg" alt="Yemek 14">
+                <h3>Etli Yaprak Sarma</h3>
+                <p>İncecik yapraklar arasına doldurulan pirinç ve kıyma karışımı, özenle sarılarak pişirilir. 
+                    Nar gibi kızarmış ve yumuşacık dokusuyla her lokmada bir keyif yaşatır. 
+                    Üzerine dökülen yoğurt ve sarımsaklı sos, lezzeti tamamlar. 
+                </p>
+                <span>150TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/hamsili-pilav.jpg" alt="Yemek 15">
+                <h3>Hamsili Pilav</h3>
+                <p>Pilavın içine eklenen taze hamsiler, her lokmada deniz esintisi sunar.
+                     Baharatlarla zenginleştirilen pirinçler, hamsilerle mükemmel bir uyum sağlar. 
+                    Her tabakta Karadeniz'in taze havası ve lezzeti hissedilir, damaklarda unutulmaz bir tat bırakır.
+                </p>
+                <span>160TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/izmir-kofte.jpg" alt="Yemek 16">
+                <h3>İzmir Köfte</h3>
+                <p>İnce bulgur, kıyma ve baharatlarla harmanlanarak şekillendirilen köfteler, özenle pişirilir. 
+                    Nar gibi kızarmış dışı ve içi sulu lezzetiyle her ısırıkta mutluluk vadeder. Üzerine dökülen yoğurt ve 
+                    tereyağı sosuyla lezzeti tamamlanır. 
+                    Her lokmada İzmir'in sıcaklığını ve zengin mutfağını hissedersiniz.
+                </p>
+                <span>180TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/kuru-kofte.jpg" alt="Yemek 17">
+                <h3>Kuru Köfte</h3>
+                <p>Kıyma, rendelenmiş soğan, baharatlar ve ekmek içiyle yoğrulup şekillendirilen köfteler, 
+                    önce kızgın yağda kızartılır ve daha sonra sos içinde pişirilir. 
+                    Lezzetli sosuyla birlikte servis edilen kuru köfte, hem göz doldurur hem de damakları şenlendirir.
+                </p>
+                <span>190TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/manti.jpg" alt="Yemek 18">
+                <h3>Mantı</h3>
+                <p> İnce hamurun içine konulan etli iç harç, özenle katlanarak küçük paketler haline getirilir. 
+                    Kaynar suda pişirilir ve üzerine yoğurt ve sarımsaklı sos dökülerek servis edilir. 
+                    Nar gibi kızarmış tereyağı ve kırmızı pul biberle süslenen mantı, her lokmada bir lezzet şöleni sunar. 
+                </p>
+                <span>140TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/patlican-kebabi.jpg" alt="Yemek 19">
+                <h3>Patlıcan Kebabı</h3>
+                <p> Dilimlenmiş patlıcanlar önce kızartılır veya ızgaralanır, sonra et veya köfte ile birleştirilir 
+                    ve üzerine domates, biber gibi sebzeler eklenir. Tüm bu malzemeler, 
+                    baharatlarla zenginleştirilerek bir araya getirilir ve yavaş ateşte pişirilir. 
+                    Sonuç olarak, yumuşak ve aromatik bir lezzet ortaya çıkar.
+                </p>
+                <span>180TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/pide.jpg" alt="Yemek 20">
+                <h3>Pide</h3>
+                <p>Pide, Türk mutfağının eşsiz bir lezzetidir! İnce hamur, bol malzeme ve sıcacık fırınla buluşur. 
+                    Her lokmada ağızda eriyen lezzet, sofralara coşku ve neşe katıyor!</p>
+                <span>175TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/tavuklu-pilav.jpg" alt="Yemek 21">
+                <h3>Tavuklu Pilav</h3>
+                <p>Piliç eti, pirinç ve sebzelerle harmanlanarak pişirilir. Tavuk suyuyla demlenen pilav, her lokmada bir lezzet şöleni sunar.
+                     Gözlerinizi kapatın ve Anadolu'nun taptaze kokularını hissedin!
+                    </p>
+                <span>120TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/yaprak-sarma.jpg" alt="Yemek 22">
+                <h3>Yaprak Sarma</h3>
+                <p>Hem doyurucu hem de sağlıklı bir seçenektir. Her lokmada Anadolu'nun sıcaklığını hissedersiniz.</p>
+                <span>80TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/yogurtlu-kabak.jpg" alt="Yemek 23">
+                <h3>Yoğurtlu Kabak</h3>
+                <p>Yoğurtlu kabak, sofralara neşe ve lezzet getirir! Renkli ve ferahlatıcı bir lezzet şöleni sunar. 
+                    Yumuşak kabaklar, yoğurtla buluşur ve her ısırıkta ağızda dans eden bir tat bırakır.
+                </p>
+                <span>80TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="img/baklava.jpg" alt="Yemek 24">
+                <h3>Baklava</h3>
+                <p>Baklava, Türk mutfağının en ünlü ve lezzetli tatlılarından biridir!
+                     İnce hamur katları arasına yerleştirilen ceviz veya 
+                     fıstık dolgusu, tatlı şerbetle buluşur ve damaklarda muhteşem bir tat bırakır. Her lokmada bir ziyafet yaşatır.
+                </p>
+                <span>150TL</span>
+                <button class="order-button">Sipariş Ver</button>
+            </div>
+        </div>
+
+    </section>
+<!-- Copyright işareti de koyalım &copy -->
+    <footer class="footer">
+        <p>&copy; 2024 Lezzetli Yemekler Web Sitesi |
+            <a href="https://www.linkedin.com/in/smertpehlivan/" target="_blank">Mert Pehlivan</a>
+        </p>
+    </footer>
+
+</body>
+</html>

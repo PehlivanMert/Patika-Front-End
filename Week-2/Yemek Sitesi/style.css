@@ -1,0 +1,237 @@
+/* Html de oluşturduğumuz her bir etiket için "*" kullanıp seçiyoruz ve istediğimiz şeyleri sıfırlıyoruz */
+* {
+    /* Margin: Bir elemanın dış kenarlarının, komşu elemanlardan olan uzaklığını belirtir. 
+    Margin, bir elemanın dışında boşluk bırakmak için kullanılır ve elemanın dış etkileşimini diğer elemanlardan ayırır. */
+    margin: 0;
+
+    /* Padding: Bir elemanın içeriğinin, iç kenarları ile dış kenarları arasındaki boşluğu belirtir. 
+    Padding, içeriği ve elemanın kenarları arasındaki boşluğu kontrol etmek için kullanılır.*/
+    padding: 0;
+
+    /* Box-sizing: Bir elemanın genişliği ve yüksekliği hesaplanırken padding ve border'ın dahil edilip edilmeyeceğini belirler. 
+    Varsayılan değer content-box'tır, bu durumda padding ve border, elemanın genişliği ve yüksekliği hesaplanırken dışarıda tutulur.
+    border-box kullanıldığında, padding ve border içeriğin genişliği ve yüksekliği içine dahil edilir. */
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background-color: #e3651d;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    /* Arka Plan rengi font rengi padding ve yazının yatay konumunu ayarladım */
+}
+header h1 {
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display:inline-block;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* text-decoration: none;: Bu özellik, bağlantıların alt çizgisini kaldırır. 
+    Yani, bağlantılar altı çizili olmayacak ve metin görünümü düzgün bir şekilde sağlanacaktır. */
+}
+/* Hover olduğunda yani üzerine geldiğimizde altı çizili olacak. */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.search-container {
+    /* max-width: 800px;: Bu özellik, .search-container sınıfına sahip öğenin maksimum genişliğini 800 piksel olarak belirler. */
+    max-width: 800px;
+
+    /* margin: 30px auto 40px;: Bu özellik, .search-container öğesine dış kenar boşlukları tanımlar. Soldan ve sağdan 30 piksel, üstten 30 piksel ve alttan 40 piksel boşluk bırakır.
+     auto değeri, öğeyi yatay olarak merkezlemek için kullanılır.  */
+    margin: 30px auto 40px;
+
+    /* display: flex;: Bu özellik, .search-container öğesini bir esnek kutu modeli olarak düzenler.
+     Bu, öğenin içindeki öğeleri esnek bir şekilde yönetmeyi sağlar. */
+    display: flex;
+
+    /* justify-content: center;: Bu özellik, .search-container öğesindeki öğeleri yatay eksende (sol ve sağ) merkezlemek için kullanılır. 
+    Yani, içerideki öğeler yatay olarak merkezlenecek. */
+    justify-content: center;
+
+    /* align-items: center;: Bu özellik, .search-container öğesindeki öğeleri dikey eksende (yukarı ve aşağı) merkezlemek için kullanılır. 
+    Yani, içerideki öğeler dikey olarak merkezlenecek. */
+    align-items: center;
+
+    /* flex-wrap: wrap;: Bu özellik, içerideki öğelerin sığmadığı durumda .search-container öğesinin içerisinde 
+    sarma (wrap) yapmasını sağlar. 
+    Bu sayede öğeler bir alt satıra geçebilir ve içerik daha düzenli bir şekilde gösterilebilir. */
+    flex-wrap: wrap;
+}
+    /* search-container içerisindeki inputları böyle de seçerbiliriz. İki tane olsa örnek olarak class verilebilir yada input [type="text"]
+    dersek sadece text olanı seçer */
+.search-container input {
+    padding: 20px;
+    width: 70%;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-container button {
+    padding: 20px 30px; /* Buton içeriğine yatay ve dikey dolgu ekledik */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Butona hafif bir gölgelendirme efekti verdik */
+    background-color: #ff5733; /* Butonun arka plan rengini ayarlardık */
+    border: none; /* Buton kenarlığını kaldırdık */
+    outline: none; /* Buton odaklandığında kenarlığı kaldırdık */
+    border-radius: 0 30px 30px 0; /* Butonun sağ kenarlarını yuvarladık */
+    font-size: 18px; /* Buton metin boyutunu ayarladık */
+    color: #fff; /* Buton metin rengini beyaz yaptık */
+    cursor: pointer; /* Fare üzerine geldiğinde butonun işaretçisi el işareti olur */
+    transition: 300ms all; /* Buton üzerine gelindiğinde geçiş efekti ekledik */
+}
+.search-container button:hover {
+    background-color: #ff3d00; /* Buton üzerine gelindiğinde arka plan rengini değiştirdik */
+}
+.hero {
+    background-image: url("img/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.button {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 300ms all;
+}
+.order-button {
+    display: block;
+    margin: 0 auto;
+    /* !important ifadesi, bir stil kuralının önceliğini arttırır. 
+    Normalde, bir stil kuralı, önceki kurala göre daha öncelikli olduğunda ve aynı özellik için çelişen değerler verildiğinde, 
+    son uygulanan kural geçerli olur. Ancak !important kullanıldığında, bir kural diğerine üstünlük sağlar. */
+    margin-top: 10px !important;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 300ms all;
+}
+.button:hover, .order-button:hover {
+    background-color: #ff3d00;
+}
+.promotion, 
+.popular, 
+.menu {
+    max-width: 1200px;
+    margin: 20px auto;
+
+    /* bu özellik öğenin normal akış içinde kalmasını sağlar, 
+    ancak bazı diğer konumlandırma özelliklerini (top, right, bottom, left) kullanarak öğenin konumunu ayarlamaya olanak tanır. */
+    position: relative;
+}
+.promotion h2, 
+.popular h2, 
+.menu h2 {
+    margin-bottom: 20px;
+}
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-item:hover {
+    transition: 300ms all;
+    transform: scale(1.03)
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3, .menu-item p {
+    margin-bottom: 13px;
+}
+
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    color: green;
+}
+
+del {
+   color: red;
+   opacity: 0.7; 
+}
+
+.tag {
+    background-color: #ff5733;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 12px;
+    top: -10px;
+    right: -5px;
+}
+
+.footer {
+    background-color: #e3651d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+}
+/* Telefonlarda bozulmayı engellemek için */
+@media only screen and (max-width: 480px) {
+    .menu {
+        text-align: center;
+    }
+
+    .promotion,
+    .popular {
+        text-align: center;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
