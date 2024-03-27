@@ -1,0 +1,283 @@
+/* Dark theme styles */
+body {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  header {
+    background-color: #343a40;
+  }
+  
+  .navbar {
+    background-color: #343a40; /* Navbar dark background color */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .logo {
+    width: 350px; /* Ayarlanması gereken boyut */
+    height: auto; /* Oranı koru */
+    border-radius: 50%;
+    animation: pulsate 2s infinite alternate; /* Animasyonu tanımla */
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.75); /* Normal boyut */
+    }
+    100% {
+        transform: scale(1.05); /* Biraz büyütülmüş boyut */
+    }
+}
+
+
+  /* Hero section styles */
+.hero {
+    background-image: url('img/best-pizzas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #ffffff;
+  }
+  
+  .hero .container {
+    padding-top: 20%;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .hero .btn-primary {
+    background-color: #ff4500; /* Button primary color */
+    border-color: #ff4500; /* Button border color */
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #dc3545; /* Button hover background color */
+    border-color: #dc3545; /* Button hover border color */
+  }
+  /* About Us section styles */
+.about-us {
+    background-color: #343a40; /* Dark background color */
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  .about-us h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .about-us img {
+    width: 200px; /* Adjust image size as needed */
+  }
+  
+  .about-us h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+  }
+  /* Menu section styles */
+  .menu {
+    padding: 40px 0;
+}
+
+.menu-item {
+    background-color: #454d55;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+.menu-item:hover {
+    transition: 300ms all;
+    transform: scale(1.03);
+  }
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-item p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.menu-item .price {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 10px;
+}
+
+
+  /* Special Offers section styles */
+.special-offers {
+    background-color: #343a40; /* Dark background color */
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  .special-offers h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .offer-item {
+    background-color: #454d55; /* Offer item background color */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .offer-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .offer-item:hover{
+        transition: 300ms all;
+        transform: scale(1.03);
+  }
+  
+  .offer-item .price {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  /* Find a Store section styles */
+.find-store {
+    background-color: #343a40; /* Dark background color */
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  .find-store h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .store-location {
+    background-color: #454d55; /* Store location background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .store-location h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .store-location p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  /* Contact section styles */
+.contact {
+    background-color: #343a40; /* Dark background color */
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .contact form .form-control {
+    background-color: #454d55; /* Form input background color */
+    border-color: #454d55; /* Form input border color */
+    color: #ffffff;
+  }
+  
+  .contact form .form-control::placeholder {
+    color: #adb5bd; /* Form input placeholder color */
+  }
+  
+  .contact form .btn-primary {
+    background-color: #ff4500; /* Button primary color */
+    border-color: #ff4500; /* Button border color */
+  }
+  
+  .contact form .btn-primary:hover {
+    background-color: #dc3545; /* Button hover background color */
+    border-color: #dc3545; /* Button hover border color */
+  }
+  
+  .contact .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  /* Footer section styles */
+.footer {
+    background-color: #343a40; /* Dark background color */
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+  }
+  
+  .footer a:hover {
+    color: #ff4500; /* Link hover color */
+  }
+  /* Example of media query for responsiveness */
+@media (max-width: 768px) {
+    /* Example of changing font size for smaller screens */
+    h1 {
+      font-size: 24px;
+    }
+  
+    /* Example of adjusting padding for smaller screens */
+    .container {
+      padding: 20px;
+    }
+}
