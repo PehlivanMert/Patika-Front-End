@@ -142,3 +142,36 @@ function showAlert(type,message){
     },1000);
 }
 
+function showAlert(type, message) {
+    const toastContainer = document.querySelector('#toastContainer');
+    const toast = document.createElement('div');
+    toast.className = `toast show alert-${type}`;
+    toast.innerHTML = `
+        <div class="toast-header">
+            <strong class="mr-auto">ToDo List</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            ${message}
+        </div>
+    `;
+    toastContainer.appendChild(toast);
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
+const selectAllCheckbox = document.createElement('input');
+selectAllCheckbox.type = 'checkbox';
+selectAllCheckbox.className = 'ml-2';
+selectAllCheckbox.addEventListener('change', () => {
+    const todos = document.querySelectorAll('.list-group-item');
+    todos.forEach(todo => {
+        todo.querySelector('input[type="checkbox"]').checked = selectAllCheckbox.checked;
+    });
+});
+
+
+

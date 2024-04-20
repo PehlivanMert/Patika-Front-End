@@ -35,3 +35,12 @@
         background-color: gray;
     }
 }
+
+#toastContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ön planda diğer elementlerin üzerinde olması için */
+}
+
+
